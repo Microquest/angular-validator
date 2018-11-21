@@ -37,7 +37,7 @@ angular.module 'validator.rules', ['validator']
     # Phone
     # ----------------------------------------
     $validatorProvider.register 'phone',
-      invoke: 'blur'
+      invoke: 'watch'
       validator: /((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/
       error: 'Must be a valid phone number.'
 ]
