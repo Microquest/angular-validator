@@ -32,12 +32,4 @@ angular.module 'validator.rules', ['validator']
         invoke: 'blur'
         validator: /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/
         error: 'Must be a valid URL.'
-
-    # ----------------------------------------
-    # Phone
-    # ----------------------------------------
-    $validatorProvider.register 'phone',
-      invoke: 'watch'
-      validator: /((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/
-      error: 'Must be a valid phone number.'
 ]
